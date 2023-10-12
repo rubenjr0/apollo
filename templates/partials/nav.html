@@ -1,14 +1,12 @@
 <header>
     <div class="main">
         <a href={{ config.base_url }}>{{ config.title }}</a>
-
-        <div class="socials">
-            {% for social in config.extra.socials %}
-            <a rel="me" href="{{ social.url }}" class="social">
-                <img alt={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
-            </a>
-            {% endfor %}
-        </div>
+        | 
+        {% for social in config.extra.socials %}
+        <a rel="me" href="{{ social.url }}" class="social">
+            <img alt={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
+        </a>
+        {% endfor %}
     </div>
 
     <nav>
@@ -22,6 +20,6 @@
             <img src="/feather/moon.svg" id="moon-icon" />
         </a>
         <script src={{ get_url(path="js/themetoggle.js" ) }}></script>
+        {% endif %}
     </nav>
-    {% endif %}
 </header>

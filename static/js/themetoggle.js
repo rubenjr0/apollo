@@ -4,6 +4,7 @@ function setTheme(mode) {
 
     if (mode === "dark") {
         document.getElementById("darkModeStyle").disabled = false;
+        document.getElementById("darkModeSyntax").disabled = false;
         htmlElement.classList.remove("light")
         htmlElement.classList.add("dark")
 
@@ -11,6 +12,7 @@ function setTheme(mode) {
         document.getElementById("moon-icon").style.display = "none";
     } else if (mode === "light") {
         document.getElementById("darkModeStyle").disabled = true;
+        document.getElementById("darkModeSyntax").disabled = true;
         htmlElement.classList.remove("dark")
         htmlElement.classList.add("light")
 

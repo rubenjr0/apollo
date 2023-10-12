@@ -118,9 +118,12 @@
         <link rel="stylesheet" type="text/css" href="{{ get_url(path='theme/dark.css') }}" media="(prefers-color-scheme: dark)" />
     {% elif theme == "toggle" %}
         <link rel="stylesheet" type="text/css" href={{ get_url(path="theme/light.css") }} />
+        <link rel="stylesheet" type="text/css" href="/light.css" />
         <link id="darkModeStyle" rel="stylesheet" type="text/css" href="{{ get_url(path='theme/dark.css') }}" />
+        <link id="darkModeSyntax" rel="stylesheet" type="text/css" href="/dark.css" />
     {% endif %}
 
+    
     <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />
 
     {% if config.extra.stylesheets %}
