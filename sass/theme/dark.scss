@@ -1,13 +1,13 @@
 :root.dark {
-  --text-0: #D6DBE5;
+  --text-0: #FFF;
   --text-1: #FFF;
 
-  --bg-0: #131313;
-  --bg-1: #737373;
-  --bg-2: #1D1E20;
+  --bg-0: #111;
+  --bg-1: #666;
+  --bg-2: #222;
 
-  --primary-color: #1081D6;
-  --hover-color: #D6DBE5;
+  --primary-color: #E56A54;
+  --hover-color: #FFF;
 
   .social>img {
     filter: invert(1);
